@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import os
 import subprocess
@@ -16,7 +18,7 @@ class KonsaveMiniGUI(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Konsave Profile Manager")
-        self.setWindowIcon(QIcon.fromTheme("applications-interfacedesign"))  # ← Set icon here
+        self.setWindowIcon(QIcon.fromTheme("applications-interfacedesign"))
         self.setFixedSize(320, 380)
 
         self.setup_ui()
@@ -164,7 +166,7 @@ class KonsaveMiniGUI(QWidget):
         self.profile_list.blockSignals(False)
         self.profile_list.setCurrentRow(0)
         self.update_button_states()
-#
+
     def save_profile(self):
         profile = self.get_selected_profile()
         if self.is_valid_profile(profile):

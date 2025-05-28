@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import QApplication, QMessageBox
 from PyQt6.QtGui import QIcon
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
+#
 # Create the application and set the icon theme
 app = QApplication(sys.argv)
 app.setWindowIcon(QIcon.fromTheme("applications-interfacedesign"))

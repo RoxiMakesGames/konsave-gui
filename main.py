@@ -164,7 +164,7 @@ class KonsaveMiniGUI(QWidget):
         self.profile_list.blockSignals(False)
         self.profile_list.setCurrentRow(0)
         self.update_button_states()
-
+#
     def save_profile(self):
         profile = self.get_selected_profile()
         if self.is_valid_profile(profile):

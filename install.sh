@@ -2,7 +2,7 @@
 set -e
 
 echo "📥 Downloading konsave-gui from GitHub..."
-curl -fsSL https://raw.githubusercontent.com/RoxiMakesGames/konsave-gui/master/konsave-gui -o konsave-gui
+curl -fsSL https://raw.githubusercontent.com/RoxiMakesGames/konsave-gui/refs/heads/master/konsave-gui -o konsave-gui
 
 echo "🔐 Making it executable..."
 chmod +x konsave-gui
